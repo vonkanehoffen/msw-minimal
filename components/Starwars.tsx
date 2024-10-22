@@ -14,6 +14,7 @@ const StarWars = () => {
     try {
       const response = await fetch("https://swapi.dev/api/people/1/");
       const data = await response.json();
+      console.log("DATA", data);
       setCharacter(data);
       setLoading(false);
     } catch (error) {
