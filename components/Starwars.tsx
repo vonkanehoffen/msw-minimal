@@ -26,7 +26,7 @@ const StarWars = () => {
   return (
     <View>
       {loading ? (
-        <ActivityIndicator size="large" />
+        <ActivityIndicator size="large" accessibilityHint="loading" />
       ) : character ? (
         <ThemedText>Character Name: {character.name}</ThemedText>
       ) : (
